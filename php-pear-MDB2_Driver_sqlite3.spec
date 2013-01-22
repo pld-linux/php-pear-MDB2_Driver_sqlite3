@@ -15,6 +15,7 @@ URL:		http://thread.gmane.org/gmane.comp.php.pear.devel/50535
 BuildRequires:	php-pear-PEAR >= 1:1.9.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	sed >= 4.0
 Requires:	php(core) >= 4.3.0
 Requires:	php(sqlite3)
 Requires:	php-pear
@@ -34,6 +35,7 @@ Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %setup -c
+grep -rl PEAR::isError . | xargs sed -i -e 's,PEAR::isError,MDB2::isError,'
 
 %install
 rm -rf $RPM_BUILD_ROOT
