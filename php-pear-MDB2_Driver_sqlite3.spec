@@ -1,6 +1,5 @@
 %define		status		beta
 %define		pearname	MDB2_Driver_sqlite3
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - sqlite MDB2 driver
 Summary(pl.UTF-8):	%{pearname} - sterownik sqlite dla MDB2
 Name:		php-pear-%{pearname}
