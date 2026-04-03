@@ -4,7 +4,7 @@ Summary:	%{pearname} - sqlite MDB2 driver
 Summary(pl.UTF-8):	%{pearname} - sterownik sqlite dla MDB2
 Name:		php-pear-%{pearname}
 Version:	0.1
-Release:	2
+Release:	3
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	MDB2_Driver_sqlite3.tar.bz2
